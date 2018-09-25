@@ -22,7 +22,8 @@ This game is one player Battleship. The goal of the game is to click the right s
 
 ## Wireframes
 
-- [Battleship-Wireframe1-Board-Layout](https://res.cloudinary.com/drsaojfyp/image/upload/v1537903470/nPktTjqXQDuDaihcSWgNhQ.jpg) (https://res.cloudinary.com/drsaojfyp/image/upload/v1537903470/bio4flGDQyu5yybJ2D2kMQ.jpg)
+- [Battleship-Wireframe1-Board-Layout](https://res.cloudinary.com/drsaojfyp/image/upload/v1537903470/nPktTjqXQDuDaihcSWgNhQ.jpg) 
+- [Battlship-WireFrame2-Board-Layout](https://res.cloudinary.com/drsaojfyp/image/upload/v1537903470/bio4flGDQyu5yybJ2D2kMQ.jpg)
 - [Battleship-Wireframe2-Supporting-Logic](https://res.cloudinary.com/drsaojfyp/image/upload/v1537903470/iT9SW4ciSdOw7_NtpN2aIg.jpg)
 
 ## Priority Matrix
@@ -78,27 +79,23 @@ Based on the initial logic defined in the previous  phases section try and break
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. 
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Wireframes | H | 3hrs| 2hrs | 2.5hrs |
-| Project Worksheet | M | 1hrs| 0hrs | 0hrs |
-| Game Init | H | 3hrs| 0hrs | 0hrs |
-| Selecting Box | H | 3hrs|  0hrs  |  0hrs  |
-| Switching Players | H | 3hrs|  0hrs  |  0hrs  |
-| Winning Logic - One Row Only | H | 4hrs|  0hrs |  0hrs |
-| Landing Page | L | 3hrs|  0hrs  | 0hrs  |
-| Game Reset| L | 3hrs|  0hrs  |  0hrs  |
-| Total | H | 23hrs| 0hrs | 0hrs |
+| Wireframes | H | 3hrs | 5hrs |
+| Project Worksheet | M | 1hrs| 1.5hrs |
+| Game Init | H | 9hrs| 0hrs |
+| Play Game | H | 7hrs|  0hrs  |
+| Check Winner | H | 11hrs|  0hrs  |
+| Landing Page | L | 6hrs|  0hrs  |
+| Game Reset| L | 7hrs|  0hrs  |
+| Total | H | 44hrs| 0hrs | 
 
 ## Helper Functions
-Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
 
 | Function | Description | 
 | --- | :---: |  
 | Capitalize | This will capitalize the first letter in a string of text | 
 
-## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
 
 ## Code Snippet
 
