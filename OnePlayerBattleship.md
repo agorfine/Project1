@@ -8,7 +8,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Complete
+|Day 1| Project Description | Complet4e
 |Day 1| Wireframes / Priority Matrix / Functional Components | Complete
 |Day 2| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 3| Pseudocode / JS MVP | Incomplete
@@ -48,34 +48,35 @@ Based on the initial logic defined in the previous  phases section try and break
 
 ### Landing Page
 - Create alert to ask username
-- Create variable to store username
-- Once they enter their name and submit transition to second Landing Page
-- Greet username (using previously defiend variable)
+- Once they enter their name and submit (store name in empty variable)
+- Transition to second Landing Page (Use DOM)
+- Greet username (using previously defiened variable)
 - Give instructions to play the game
-- Include play game button -> this will transition to the Game Initialization page
+- Include play game button (event listener)-> this will transition to the Game Initialization page
+- Use DOM to transition between screens 
 
 ### Game Initialization
 - There will be two components to the Game Initialization
-- The user will see a blank board (15 squares, 5 equal columns and rows)
+- The user will see a blank board (15 squares, 5 equal columns and rows created with HTML and CSS flex box)
 - Behind the user interface, the battleships will be placed on "winning squares". There will be 3 ships total (two 3 square long ships and one two square long - 8 winning squares total). Ships can only be placed vertically or horizontally
-- Initially, the ships will be hard coded into the board with an ID
+- Initially, the ships will be hard coded into the board with an ID and the display will be none 
 
 
 ### Playing The Game 
 - User must click on the squares 
-- Will target where the user clicks by using a event.target function
-- Will have each square's background color change when the mouse is hovered over the square to visualize the selection
+- Will target where the user clicks by using a event.target.id function (recreate function used in TTT game)
+- Will have each square's background color change when the mouse is hovered over the square to visualize the selection (mouse hover event listener, DOM to change color)
 - Once the user clicks on a square must run the check winner function- IF the square selected is a winning square, show portion of ship, ELSE show a snowflake
-- Each square will be unclickable once selected (create image div big enough that it is covering the event.target)
+- Each square will be unclickable once selected (create image div big enough that it is covering the event.target.id)
 
 ### Winning The Game
-- Continue to select squares until all 3 boats (8 winning squares) are selected
-- Must compare the user's selected square to the winning squares after each user selection
+- Continue to select squares until all 3 boats (8 winning squares) are selected (continuously loop through event.target.id function)
+- Must compare the user's selected square to the winning squares after each user selection (NEST check winner function in the event.target.id function to check after each selection- IF the square selected is a winning square, show portion of ship, ELSE show a snowflake)
 
 ### Resetting The Game
-- Once all 8 of the winning squares are selected a pop up will transition over the game
+- Once all 8 of the winning squares are selected a pop up will transition over the game (use DOM to transition pop up over UI initial board)
 - This pop up will alert the user they won the game and ask if they want to play again
-- If the player selects 'yes' to playing again, the board will clear and be filled with an empty string 
+- If the player selects 'yes' to playing again, the board will clear and be filled with an empty string (event listener on the play again button including a function of empty string to clear the board)
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. 
 
