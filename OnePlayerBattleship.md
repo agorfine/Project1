@@ -10,7 +10,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Functional Components | Complete
-|Day 2| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|Day 2| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 3| Pseudocode / JS MVP | Incomplete
 |Day 4| Full Working JS  | Incomplete
 |Day 5| Present | Incomplete
