@@ -81,17 +81,17 @@ Based on the initial logic defined in the previous  phases section try and break
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. 
 
-| Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Wireframes | H | 3hrs | 5hrs |
-| Project Worksheet | M | 1.5hrs| 1.5hrs |
-| HTML & CSS | H | 2hrs| 0hrs |
-| Game Init | H | 7hrs| 0hrs |
-| Play Game | H | 7hrs|  0hrs  |
-| Check Winner | H | 11hrs|  0hrs  |
-| Landing Page | L | 6hrs|  0hrs  |
-| Game Reset| L | 7hrs|  0hrs  |
-| Total | H | 44hrs| 0hrs | 
+Component | Priority | Estimated Time | Actual Time
+--- | :---: |  :---: | :---: | :---: |
+Wireframes | H | 3hrs | 5hrs |
+Project Worksheet | M | 1.5hrs| 1.5hrs |
+HTML & CSS | H | 2hrs| 0hrs |
+Game Init | H | 7hrs| 0hrs |
+Play Game | H | 7hrs|  0hrs  |
+Check Winner | H | 11hrs|  2hrs  |
+Landing Page | L | 6hrs|  0hrs  |
+Game Reset| L | 7hrs|  1hr  |
+Total | H | 44hrs| 0hrs | 
 
 ## Helper Functions
 
