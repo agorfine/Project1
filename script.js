@@ -3,7 +3,7 @@ let nextButton = document.querySelector('.next')
 let intro2 = document.querySelector('.intro2')
 let playButton = document.querySelector('.playButton')
 let loadPageContainer = document.querySelector('.loadPageContainer')
-
+let video = document.querySelector('.video')
 
 function next () {
 
@@ -15,6 +15,7 @@ function next () {
 	intro2.classList.remove('hidden')
 	playButton.classList.add('playButton')
 	playButton.classList.remove('hidden')
+	video.classList.remove('hidden')
 }
 
 nextButton.addEventListener('click', next)
@@ -78,7 +79,7 @@ function checkWinner() {
 
 	if (winningSquares.length === checkWinningSquares.length) {
 		resetButton.classList.add('playAgain')
-		resetText.textContent = "Congratulations! You helped Queen Elsa defeat the Duke of Weselton!"
+		resetText.textContent = "Congratulations! You helped Queen Elsa and Princess Anna defeat the Duke of Weselton!"
 		resetText.classList.add('winningScreen')
 		container.classList.add('playAgainContainer')
 		resetButton.textContent = "Play Again"
