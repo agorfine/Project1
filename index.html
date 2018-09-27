@@ -8,9 +8,21 @@
 </head>
 
 <body>
+	<div class = "loadPageContainer">
+		<div class= "loadPage">
+			<p class = 'intro1'>
+				Help Queen Elsa and Princess Anna! The Duke of Weselton is trying to sink Arendelle's trade ships. It is your job to retaliate and sink Weselton's ships before they sink yours.
+				<img src="https://res.cloudinary.com/drsaojfyp/image/upload/v1538072345/Dukepic_1.png" alt="Duke_Of_Weselton">
+			</p>	
+			<button class = "next">Next</button>
+			<p class = 'hidden intro2'>
+				Click on each square until you locate all three trade ships.</p>
+			<button class = 'hidden playButton'>Play Game</button>
+		</div>
+	</div>	
 	
 	<div class = "container">
-		<div class = "board">
+		<div class = "hidden board">
 			<div class = "column1">
 				<div class = "button" id = "A1"></div>
 				<div class = "button" id = "B1"></div>
@@ -47,11 +59,11 @@
 				<div class = "button" id = "E5"></div>
 			</div>
 		</div>
-		<h1>Username, help Queen Elsa defeat the Duke of Weselton!</h1>
+		<h1 class= 'hidden'>Help Queen Elsa defeat the Duke of Weselton!</h1>
 	</div>
 	<div id= "playAgain">
-		<p></p>
-		<button></button>
+		<p class = "hidden" id = 'resetText'></p>
+		<button class = "hidden" id = 'resetButton'></button>
 	</div>	
 
 	
