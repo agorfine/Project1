@@ -6,14 +6,15 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-|  Day | Deliverable | Status
-|---|---| ---|
-|Day 1| Project Description | Complete
-|Day 1| Wireframes / Priority Matrix / Functional Components | Complete
-|Day 2| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 3| Pseudocode / JS MVP | Incomplete
-|Day 4| Full Working JS  | Incomplete
-|Day 5| Present | Incomplete
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Wireframes | H | 3hrs| 2hrs | 5hrs |
+| Project Worksheet | M | 1hrs| 0hrs | 1.5hrs |
+| Game Init/Play Game | H | 3hrs| 0hrs | 3.3hrs |
+| Check Winner | H | 3hrs|  0hrs  |  2hrs  |
+| Landing Page | L | 3hrs|  0hrs  | 0hrs  |
+| Game Reset| L | 3hrs|  0hrs  |  1hr  |
+| Total | H | 37hrs| 0hrs | 14.2hrs |
 
 
 ## Project Description
