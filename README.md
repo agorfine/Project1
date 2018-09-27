@@ -6,14 +6,15 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-|  Day | Deliverable | Status
-|---|---| ---|
-|Day 1| Project Description | Complete
-|Day 1| Wireframes / Priority Matrix / Functional Components | Complete
-|Day 2| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 3| Pseudocode / JS MVP | Incomplete
-|Day 4| Full Working JS  | Incomplete
-|Day 5| Present | Incomplete
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Wireframes | H | 3hrs| 2hrs | 5hrs |
+| Project Worksheet | M | 1hrs| 0hrs | 1.5hrs |
+| Game Init/Play Game | H | 3hrs| 0hrs | 3.3hrs |
+| Check Winner | H | 3hrs|  0hrs  |  2hrs  |
+| Landing Page | L | 3hrs|  0hrs  | 0hrs  |
+| Game Reset| L | 3hrs|  0hrs  |  1hr  |
+| Total | H | 37hrs| 0hrs | 14.2hrs |
 
 
 ## Project Description
@@ -81,17 +82,17 @@ Based on the initial logic defined in the previous  phases section try and break
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. 
 
-| Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Wireframes | H | 3hrs | 5hrs |
-| Project Worksheet | M | 1.5hrs| 1.5hrs |
-| HTML & CSS | H | 2hrs| 0hrs |
-| Game Init | H | 7hrs| 0hrs |
-| Play Game | H | 7hrs|  0hrs  |
-| Check Winner | H | 11hrs|  0hrs  |
-| Landing Page | L | 6hrs|  0hrs  |
-| Game Reset| L | 7hrs|  0hrs  |
-| Total | H | 44hrs| 0hrs | 
+Component | Priority | Estimated Time | Actual Time
+--- | :---: |  :---: | :---: | :---: |
+Wireframes | H | 3hrs | 5hrs |
+Project Worksheet | M | 1.5hrs| 1.5hrs |
+HTML & CSS | H | 2hrs| 0hrs |
+Game Init | H | 7hrs| 0hrs |
+Play Game | H | 7hrs|  0hrs  |
+Check Winner | H | 11hrs|  2hrs  |
+Landing Page | L | 6hrs|  0hrs  |
+Game Reset| L | 7hrs|  1hr  |
+Total | H | 44hrs| 0hrs | 
 
 ## Helper Functions
 
