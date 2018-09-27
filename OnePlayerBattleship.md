@@ -10,7 +10,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Functional Components | Complete
-|Day 2| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 2| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Day 3| Pseudocode / JS MVP | Incomplete
 |Day 4| Full Working JS  | Incomplete
 |Day 5| Present | Incomplete
@@ -85,13 +85,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Wireframes | H | 3hrs | 5hrs |
 | Project Worksheet | M | 1.5hrs| 1.5hrs |
-| HTML & CSS | H | 2hrs| 0hrs |
-| Game Init | H | 7hrs| 0hrs |
-| Play Game | H | 7hrs|  0hrs  |
-| Check Winner | H | 11hrs|  0hrs  |
+| HTML & CSS | H | 2hrs| 1.4hrs |
+| Game Init/Play Game | H | 7hrs| 3.3hrs |
+| Check Winner | H | 11hrs|  2hrs  |
 | Landing Page | L | 6hrs|  0hrs  |
 | Game Reset| L | 7hrs|  0hrs  |
-| Total | H | 44hrs| 0hrs | 
+| Total | H | 44hrs| 13.2hrs | 
 
 ## Helper Functions
 
