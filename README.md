@@ -8,13 +8,14 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Wireframes | H | 3hrs| 2hrs | 5hrs |
+| Wireframes | H | 3hrs| 0hrs | 3hrs |
 | Project Worksheet | M | 1hrs| 0hrs | 1.5hrs |
-| Game Init/Play Game | H | 3hrs| 0hrs | 3.3hrs |
+| HTML & CSS | H | 3hrs| 0hrs | 2hrs |
+| Game Init/Play Game | H | 3hrs|  0hrs  |  3.5hrs  |
 | Check Winner | H | 3hrs|  0hrs  |  2hrs  |
-| Landing Page | L | 3hrs|  0hrs  | 0hrs  |
-| Game Reset| L | 3hrs|  0hrs  |  1hr  |
-| Total | H | 37hrs| 0hrs | 14.2hrs |
+| Landing Page - One Row Only | H | 4hrs|  0hrs |  3.5hrs |
+| Game Reset| L | 3hrs|  0hrs  |  1.5hrs  |
+| Total | H | 37hrs| 0hrs | 19hrs |
 
 
 ## Project Description

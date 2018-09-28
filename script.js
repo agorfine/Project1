@@ -1,6 +1,7 @@
+
 let intro1 = document.querySelector('.intro1')
 let nextButton = document.querySelector('.next')
-let intro2 = document.querySelector('.intro2')
+let intro2 = document.querySelector('.beforeIntro2')
 let playButton = document.querySelector('.playButton')
 let loadPageContainer = document.querySelector('.loadPageContainer')
 let video = document.querySelector('.video')
@@ -21,11 +22,12 @@ function next () {
 nextButton.addEventListener('click', next)
 
 function loadGame() {
-	let board = document.querySelector('.board')
 	let h1 = document.querySelector('h1')
 
+	
 	board.classList.remove('hidden')
 	h1.classList.remove('hidden')
+	loadPageContainer.classList.remove('loadPageContainer')
 	loadPageContainer.classList.add('hidden')
 }
 
@@ -145,6 +147,55 @@ function checkWinner() {
 	playAgain.addEventListener('click',resetGame)
 };
 
+let screen = window.matchMedia("(max-width: 425px)")
+let column5 = document.querySelector('.column5')
+
+function mediaScreen (screen){
+	if (screen.matches) {
+		console.log('test')
+		column5.classList.add('hidden')
+		board.removeEventListener('click', playGame)
+
+		function playGameMobile (event) {
+			let square = event.target.id
+			
+			if (document.getElementById(event.target.id) === C1) {
+				document.getElementById(event.target.id).classList.add('boat1Part1')
+				checkWinningSquares.push('C1')
+			} else if (document.getElementById(event.target.id) === C2){
+				document.getElementById(event.target.id).classList.add('boat1Part2')
+				checkWinningSquares.push('C2')
+			} else if (document.getElementById(event.target.id) === A4){
+				document.getElementById(event.target.id).classList.add('boat2Part1')
+				checkWinningSquares.push('A4')
+			} else if (document.getElementById(event.target.id) === B4) {
+				document.getElementById(event.target.id).classList.add('boat2Part2')
+				checkWinningSquares.push('B4')
+			// } else if (document.getElementById(event.target.id) === C5) {
+			// 	document.getElementById(event.target.id).classList.add('boat2Part2')
+			// 	checkWinningSquares.push('C5')
+			// } else if (document.getElementById(event.target.id) === D5) {
+			// 	document.getElementById(event.target.id).classList.add('boat2Part3')
+			// 	checkWinningSquares.push('D5')
+			// } else if (document.getElementById(event.target.id) === D2) {
+			// 	document.getElementById(event.target.id).classList.add('boat3Part1')
+			// 	checkWinningSquares.push('D2')
+			// } else if (document.getElementById(event.target.id) === D3) {
+			// 	document.getElementById(event.target.id).classList.add('boat3Part2')
+			// 	checkWinningSquares.push('D3')
+			} else {
+				document.getElementById(event.target.id).classList.add('snowflake')
+			}
+		// console.log(checkWinningSquares)
+		checkWinner();
+		}	
+
+		board.addEventListener('click', playGameMobile)
+	}	
+}
+
+mediaScreen(screen);
+screen.addListener(mediaScreen)
 
 
 
