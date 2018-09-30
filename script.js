@@ -21,9 +21,9 @@ function next () {
 
 nextButton.addEventListener('click', next)
 
-function loadGame() {
-	let h1 = document.querySelector('h1')
+let h1 = document.querySelector('h1')
 
+function loadGame() {
 	
 	board.classList.remove('hidden')
 	h1.classList.remove('hidden')
@@ -147,50 +147,103 @@ function checkWinner() {
 	playAgain.addEventListener('click',resetGame)
 };
 
+// mobile version
+
 let screen = window.matchMedia("(max-width: 425px)")
 let column5 = document.querySelector('.column5')
 
 function mediaScreen (screen){
 	if (screen.matches) {
 		console.log('test')
+		let winningSquaresMobile = ['C1', 'C2', 'A4', 'B4', 'E2', 'E3']
+		let checkWinningSquaresMobile = []
 		column5.classList.add('hidden')
 		board.removeEventListener('click', playGame)
+		// playAgain.removeEventListener('click',resetGame)
 
 		function playGameMobile (event) {
 			let square = event.target.id
 			
 			if (document.getElementById(event.target.id) === C1) {
 				document.getElementById(event.target.id).classList.add('boat1Part1')
-				checkWinningSquares.push('C1')
+				checkWinningSquaresMobile.push('C1')
 			} else if (document.getElementById(event.target.id) === C2){
 				document.getElementById(event.target.id).classList.add('boat1Part2')
-				checkWinningSquares.push('C2')
+				checkWinningSquaresMobile.push('C2')
 			} else if (document.getElementById(event.target.id) === A4){
 				document.getElementById(event.target.id).classList.add('boat2Part1')
-				checkWinningSquares.push('A4')
+				checkWinningSquaresMobile.push('A4')
 			} else if (document.getElementById(event.target.id) === B4) {
 				document.getElementById(event.target.id).classList.add('boat2Part2')
-				checkWinningSquares.push('B4')
-			// } else if (document.getElementById(event.target.id) === C5) {
-			// 	document.getElementById(event.target.id).classList.add('boat2Part2')
-			// 	checkWinningSquares.push('C5')
-			// } else if (document.getElementById(event.target.id) === D5) {
-			// 	document.getElementById(event.target.id).classList.add('boat2Part3')
-			// 	checkWinningSquares.push('D5')
-			// } else if (document.getElementById(event.target.id) === D2) {
-			// 	document.getElementById(event.target.id).classList.add('boat3Part1')
-			// 	checkWinningSquares.push('D2')
-			// } else if (document.getElementById(event.target.id) === D3) {
-			// 	document.getElementById(event.target.id).classList.add('boat3Part2')
-			// 	checkWinningSquares.push('D3')
+				checkWinningSquaresMobile.push('B4')
+			} else if (document.getElementById(event.target.id) === E2) {
+				document.getElementById(event.target.id).classList.add('boat3Part1')
+				checkWinningSquaresMobile.push('E2')
+			} else if (document.getElementById(event.target.id) === E3) {
+				document.getElementById(event.target.id).classList.add('boat3Part2')
+				checkWinningSquaresMobile.push('E3')
 			} else {
 				document.getElementById(event.target.id).classList.add('snowflake')
 			}
 		// console.log(checkWinningSquares)
-		checkWinner();
+		checkWinnerMobile();
 		}	
 
 		board.addEventListener('click', playGameMobile)
+
+		let resetText= document.querySelector('#resetText')
+			let resetButton = document.querySelector('#resetButton')
+			let container = document.querySelector('#playAgain')
+			let annaElsa = document.querySelector('#annaElsa')
+
+		function checkWinnerMobile() {
+
+			if (winningSquaresMobile.length === checkWinningSquaresMobile.length) {
+				resetButton.classList.add('playAgain')
+				resetText.textContent = "Congratulations! You helped Queen Elsa and Princess Anna defeat the Duke of Weselton!"
+				resetText.classList.add('winningScreen')
+				container.classList.add('playAgainContainer')
+				resetButton.classList.remove('hidden')
+				resetButton.textContent = "Play Again"
+				annaElsa.classList.remove('hidden')
+				annaElsa.classList.add('annaElsaPic')
+				h1.classList.add('hidden')
+				board.classList.add('hidden')
+
+			}	
+		}
+
+		function resetGameMobile () {
+			resetButton.classList.remove('playAgain');
+			resetText.classList.remove('winningScreen');
+			container.classList.remove('playAgainContainer');
+			board.classList.remove('hidden')
+			board.classList.add('board')
+			h1.classList.remove('hidden')
+
+			A1.classList.remove('snowflake');
+			A2.classList.remove('snowflake');
+			A3.classList.remove('snowflake');
+			A4.classList.remove('boat2Part1');
+			B1.classList.remove('snowflake');
+			B2.classList.remove('snowflake');
+			B3.classList.remove('snowflake');
+			B4.classList.remove('boat2Part2');
+			C1.classList.remove('boat1Part1');
+			C2.classList.remove('boat1Part2');
+			C3.classList.remove('snowflake');
+			C4.classList.remove('snowflake');
+			D1.classList.remove('snowflake');
+			D2.classList.remove('snowflake');
+			D3.classList.remove('snowflake');
+			D4.classList.remove('snowflake');
+			E1.classList.remove('snowflake');
+			E2.classList.remove('boat3Part1');
+			E3.classList.remove('boat3Part2');
+			E4.classList.remove('snowflake');
+			checkWinningSquaresMobile = []
+		}
+		playAgain.addEventListener('click',resetGameMobile)	
 	}	
 }
 
