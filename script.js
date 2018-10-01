@@ -80,6 +80,8 @@ function checkWinner() {
 	let container = document.querySelector('#playAgain')
 
 	if (winningSquares.length === checkWinningSquares.length) {
+		board.classList.add('hidden')
+		h1.classList.add('hidden')
 		resetButton.classList.add('playAgain')
 		resetText.textContent = "Congratulations! You helped Queen Elsa and Princess Anna defeat the Duke of Weselton!"
 		resetText.classList.add('winningScreen')
@@ -117,6 +119,8 @@ function checkWinner() {
 		resetButton.classList.remove('playAgain');
 		resetText.classList.remove('winningScreen');
 		container.classList.remove('playAgainContainer');
+		board.classList.remove('hidden')
+		h1.classList.remove('hidden')
 		A1.classList.remove('boat1Part1');
 		A2.classList.remove('boat1Part2');
 		A3.classList.remove('boat1Part3');
@@ -199,14 +203,14 @@ function mediaScreen (screen){
 		function checkWinnerMobile() {
 
 			if (winningSquaresMobile.length === checkWinningSquaresMobile.length) {
-				resetButton.classList.add('playAgain')
+				resetButton.classList.add('playAgainMobile')
 				resetText.textContent = "Congratulations! You helped Queen Elsa and Princess Anna defeat the Duke of Weselton!"
-				resetText.classList.add('winningScreen')
-				container.classList.add('playAgainContainer')
+				resetText.classList.add('winningScreenMobile')
+				container.classList.add('playAgainContainerMobile')
 				resetButton.classList.remove('hidden')
 				resetButton.textContent = "Play Again"
 				annaElsa.classList.remove('hidden')
-				annaElsa.classList.add('annaElsaPic')
+				annaElsa.classList.add('annaElsaPicMobile')
 				h1.classList.add('hidden')
 				board.classList.add('hidden')
 
@@ -214,12 +218,15 @@ function mediaScreen (screen){
 		}
 
 		function resetGameMobile () {
-			resetButton.classList.remove('playAgain');
-			resetText.classList.remove('winningScreen');
-			container.classList.remove('playAgainContainer');
+			resetButton.classList.remove('playAgainMobile');
+			resetButton.classList.add('hidden')
+			resetText.classList.remove('winningScreenMobile');
+			resetText.classList.add('hidden')
+			container.classList.remove('playAgainContainerMobile');
 			board.classList.remove('hidden')
 			board.classList.add('board')
 			h1.classList.remove('hidden')
+			annaElsa.classList.add('hidden')
 
 			A1.classList.remove('snowflake');
 			A2.classList.remove('snowflake');
