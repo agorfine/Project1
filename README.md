@@ -6,16 +6,18 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Wireframes | H | 3hrs| 0hrs | 3hrs |
-| Project Worksheet | M | 1hrs| 0hrs | 1.5hrs |
-| HTML & CSS | H | 3hrs| 0hrs | 2hrs |
-| Game Init/Play Game | H | 3hrs|  0hrs  |  3.5hrs  |
-| Check Winner | H | 3hrs|  0hrs  |  2hrs  |
-| Landing Page - One Row Only | H | 4hrs|  0hrs |  3.5hrs |
-| Game Reset| L | 3hrs|  0hrs  |  1.5hrs  |
-| Total | H | 37hrs| 0hrs | 19hrs |
+| Wireframes | H | 3hrs | 3hrs |
+| Project Worksheet | M | 1hrs| 1.5hrs |
+| HTML & CSS | H | 3hrs| 7hrs |
+| Game Init | H | 9hrs|  3.5hrs  |
+| Play Game | H | 7hrs|  3.5hrs  |
+| Check Winner | H | 11hrs| 2hrs  |
+| Landing Page | H | 6hrs|  3.5hrs |
+| Game Reset| L | 7hrs|  5hrs  |
+| Mobile Responsive| L | 10hrs| 9hrs  |
+| Total | H | 57hrs| 38hrs |
 
 
 ## Project Description
@@ -99,42 +101,48 @@ Total | H | 44hrs| 0hrs |
 
 | Function | Description | 
 | --- | :---: |  
-| Capitalize | This will capitalize the first letter in a string of text | 
+| target.event.id | This will select specific id of an event listener (target specific id of item clicked) | 
+| element.classList.add | This will add a class to a specific element. The class can have styling in CSS that will be added to the tag | 
+| element.classList.remove | This will remove a class of a specific element. The class/styling in CSS will be removed from the tag | 
+| let element = window.matchMedia('(min-width: 600px)') with a function (screen) if (screen.matches) | This variable and function combination allows you to specify certain JavaScript for different screen sizes | 
 
 
 ## Code Snippet
 
-The code snippet below is used to check for a winner and is called after every move.   It loops over an array of arrays that contain positions assigned to corresponding cells as id's. Such as row 1 is: [[1.1, 1.2, 1.3]].  The cells have been assigned that cooresponding number 
+The code snippet below is used to play the game. I used an event.target.id function to locate the specific square the user has clicked on. The boats are hard coded into specific IDs, so when a user clicks on that specific square the class for the boat is added to the square (the boat is then shown as the background image). If the square clicked does not contain a boat, a class is added to the square with a snowflake background.
 
 ```
-function checkWin() {
-  let winner = false
-  for (let i = 0; i < endgames.length; i++) {
-    let n = '';
-    for (let e = 0; e < 3; e++) {
-      n += document.getElementById(endgames[i][e]).innerText;
-    };
-    if (n.length === 3) {
-      if (n[0] === n[1] && n[0] === n[2]) {
-        winner = true;
-        setTimeout(function() {
-          reset(n[0] + ' wins!');
-        }, 10);
-      };
-    };
-  };
-  if (moveCount === 9 && !winner) {
-    setTimeout(function() {
-      reset('It\'s a tie!');
-    }, 20);
-  };
-};
-```
+function playGameMobile(event) {
+  let square = event.target.id
 
-**Note**: In [HTML5 ID's can be numbers](https://benfrain.com/when-and-where-you-can-use-numbers-in-id-and-class-names/)
+    if (document.getElementById(event.target.id) === C1) {
+        document.getElementById(event.target.id).classList.add('boat1Part1')
+        checkWinningSquaresMobile.push('C1')
+    } else if (document.getElementById(event.target.id) === C2) {
+        document.getElementById(event.target.id).classList.add('boat1Part2')
+        checkWinningSquaresMobile.push('C2')
+    } else if (document.getElementById(event.target.id) === A4) {
+        document.getElementById(event.target.id).classList.add('boat2Part1')
+        checkWinningSquaresMobile.push('A4')
+    } else if (document.getElementById(event.target.id) === B4) {
+        document.getElementById(event.target.id).classList.add('boat2Part2')
+        checkWinningSquaresMobile.push('B4')
+    } else if (document.getElementById(event.target.id) === E2) {
+        document.getElementById(event.target.id).classList.add('boat3Part1')
+        checkWinningSquaresMobile.push('E2')
+    } else if (document.getElementById(event.target.id) === E3) {
+        document.getElementById(event.target.id).classList.add('boat3Part2')
+        checkWinningSquaresMobile.push('E3')
+    } else {
+        document.getElementById(event.target.id).classList.add('snowflake')
+    }
+      
+  checkWinnerMobile();
+}
+```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ I initially thought using the local storage was required for the project. Instead of two load pages (one with an introduction and one with instructions), I was going to make three pages- one greeting the user and storing their username. After creating the first two load pages, I determined it would create a negative user experince to have so many pages before playing the game.
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.

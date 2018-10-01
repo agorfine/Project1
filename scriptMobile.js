@@ -216,22 +216,22 @@ function mediaScreen2 (screen){
 		} else if (document.getElementById(event.target.id) === A3){
 				document.getElementById(event.target.id).classList.add('boat1Part3')
 				checkWinningSquares.push('A3')
-			} else if (document.getElementById(event.target.id) === B5) {
+		} else if (document.getElementById(event.target.id) === B5) {
 				document.getElementById(event.target.id).classList.add('boat2Part1')
 				checkWinningSquares.push('B5')
-			} else if (document.getElementById(event.target.id) === C5) {
+		} else if (document.getElementById(event.target.id) === C5) {
 				document.getElementById(event.target.id).classList.add('boat2Part2')
 				checkWinningSquares.push('C5')
-			} else if (document.getElementById(event.target.id) === D5) {
+		} else if (document.getElementById(event.target.id) === D5) {
 				document.getElementById(event.target.id).classList.add('boat2Part3')
 				checkWinningSquares.push('D5')
-			} else if (document.getElementById(event.target.id) === D2) {
+		} else if (document.getElementById(event.target.id) === D2) {
 				document.getElementById(event.target.id).classList.add('boat3Part1')
 				checkWinningSquares.push('D2')
-			} else if (document.getElementById(event.target.id) === D3) {
+		} else if (document.getElementById(event.target.id) === D3) {
 				document.getElementById(event.target.id).classList.add('boat3Part2')
 				checkWinningSquares.push('D3')
-			} else {
+		} else {
 				document.getElementById(event.target.id).classList.add('snowflake')
 			}
 			// console.log(checkWinningSquares)
