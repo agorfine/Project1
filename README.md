@@ -101,7 +101,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | target.event.id | This will select specific id of an event listener (target specific id of item clicked) | 
 | element.classList.add | This will add a class to a specific element. The class can have styling in CSS that will be added to the tag | 
 | element.classList.remove | This will remove a class of a specific element. The class/styling in CSS will be removed from the tag | 
-| let element = window.matchMedia('(min-width: 600px)') with a function (screen) if (screen.matches) | This variable and function combination allows you to specify certain JavaScript for different screen sizes | 
+| let element = window.matchMedia('(min-width: 600px)') with a function (screen) { if (screen.matches) {} } | This variable and function combination allows you to specify certain JavaScript for different screen sizes | 
 
 
 ## Code Snippet
@@ -144,6 +144,8 @@ function playGameMobile(event) {
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: Game is responsive visually, but not logically: when window is expanded or shrunk, the logic only works if you refresh the page                                
+**RESOLUTION**: At this moment, I am unable to resolve this issue. I attempted to put two media match functions in my code for two different screen sizes. They each work if the page is refreshed; however, if you start with the small screen and expand, the logic does not follow.
+
+**ERROR**: Squares are still clickable once background has changed: you can click on one winning square eight times and trigger the win game screen.                                
+**RESOLUTION**: At this moment, I am unable to resolve this issue. I attempted to create a section when each square was clicked that is the same size as the button, and then add the "hidden" class once the game reset. Only some of the sections were hidden, others were still there and made the game unplayable.
