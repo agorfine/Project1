@@ -1,5 +1,10 @@
 # Project Overview
 
+## Project Link
+
+Below is a link to the deployed desktop game.
+- [Frozen-OnePlayer-BattleShip-Game](https://pages.git.generalassemb.ly/agorfine/Project1_Battleship/) 
+
 ## Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
