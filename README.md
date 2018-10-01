@@ -83,7 +83,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 
 | Componenet | Priority | Estimated Time | Actual Time |
-| --- | :---: | :---: | :---: | :---: |
+| --- | :---: | :---: | :---: |
 | Wireframes | H | 3hrs | 3hrs |
 | Project Worksheet | M | 1hr | 1.5hrs |
 | HTML & CSS | H | 3hrs | 7 hrs |
