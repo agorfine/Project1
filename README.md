@@ -81,6 +81,7 @@ Based on the initial logic defined in the previous  phases section try and break
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. 
 
+
 | Componenet | Priority | Estimated Time | Actual Time |
 | --- | :---: | :---: | :---: | :---: |
 | Wireframes | H | 3hrs | 3hrs |
@@ -93,6 +94,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Game Reset | L | 7hrs | 5hrs |
 | Mobile Responsive | L | 10hrs | 9hrs |
 | Total | H | 57hrs | 38hrs |
+
 
 ## Helper Functions
 
