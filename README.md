@@ -1,9 +1,14 @@
 # Project Overview
 
-## Project Link
+## Project Links
 
-Below is a link to the deployed desktop game.
+Below is a link to the deployed desktop game:
 - [Frozen-OnePlayer-BattleShip-Game](https://pages.git.generalassemb.ly/agorfine/Project1_Battleship/) 
+
+Below is a link to the screen cast: 
+Below is a link to the deployed desktop game:
+- [Frozen-OnePlayer-BattleShip-Game-ScreenCast](https://www.youtube.com/watch?v=34O6CLrtwT4&feature=youtu.be) 
+
 
 ## Project Schedule
 
