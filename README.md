@@ -6,7 +6,14 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-
+|  Day | Deliverable | Status
+|---|---| ---|
+|Day 1| Project Description | Complete
+|Day 2| Wireframes / Priority Matrix / Functional Components | Complete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 4| Pseudocode / JS MVP | Complete
+|Day 5| Full Working JS  | Complete
+|Day 6| Present | Incomplete
 
 
 ## Project Description
@@ -74,15 +81,18 @@ Based on the initial logic defined in the previous  phases section try and break
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. 
 
-|  Day | Deliverable | Status
-|---|---| ---|
-|Day 1| Project Description | Complete
-|Day 2| Wireframes / Priority Matrix / Functional Components | Complete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
-|Day 4| Pseudocode / JS MVP | Complete
-|Day 5| Full Working JS  | Complete
-|Day 6| Present | Incomplete
-
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Wireframes | H | 3hrs | 3hrs |
+| Project Worksheet | M | 1hrs| 0hrs | 1.5hrs |
+| HTML & CSS | H | 3hrs| 0hrs | 7hrs |
+| Game Init | H | 9hrs|  0hrs  |  3.5hrs  |
+| Play Game | H | 7hrs|  0hrs  |  3.5hrs  |
+| Check Winner | H | 11hrs|  0hrs  |  2hrs  |
+| Landing Page | H | 6hrs|  0hrs |  3.5hrs |
+| Game Reset| L | 7hrs|  0hrs  |  5hrs  |
+| Mobile Responsive| L | 10hrs|  0hrs  |  9hrs  |
+| Total | H | 57hrs| 0hrs | 38hrs |
 
 ## Helper Functions
 
