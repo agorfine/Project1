@@ -81,18 +81,18 @@ Based on the initial logic defined in the previous  phases section try and break
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. 
 
-| Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
+| Componenet | Priority | Estimated Time | Actual Time |
+| --- | :---: | :---: | :---: | :---: |
 | Wireframes | H | 3hrs | 3hrs |
-| Project Worksheet | M | 1hrs| 0hrs | 1.5hrs |
-| HTML & CSS | H | 3hrs| 0hrs | 7hrs |
-| Game Init | H | 9hrs|  0hrs  |  3.5hrs  |
-| Play Game | H | 7hrs|  0hrs  |  3.5hrs  |
-| Check Winner | H | 11hrs|  0hrs  |  2hrs  |
-| Landing Page | H | 6hrs|  0hrs |  3.5hrs |
-| Game Reset| L | 7hrs|  0hrs  |  5hrs  |
-| Mobile Responsive| L | 10hrs|  0hrs  |  9hrs  |
-| Total | H | 57hrs| 0hrs | 38hrs |
+| Project Worksheet | M | 1hr | 1.5hrs |
+| HTML & CSS | H | 3hrs | 7 hrs |
+| Game Init | H | 9hrs | 3.5hrs |
+| Play Game | H | 7hrs | 3.5hrs |
+| Check Winner | H | 11hrs | 2hrs |
+| Landing Page | L | 6hrs | 3.5hrs |
+| Game Reset | L | 7hrs | 5hrs |
+| Mobile Responsive | L | 10hrs | 9hrs |
+| Total | H | 57hrs | 38hrs |
 
 ## Helper Functions
 
@@ -106,7 +106,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Code Snippet
 
-The code snippet below is used to play the game. I used an event.target.id function to locate the specific square the user has clicked on. The boats are hard coded into specific IDs, so when a user clicks on that specific square the class for the boat is added to the square (the boat is then shown as the background image). If the square clicked does not contain a boat, a class is added to the square with a snowflake background.
+The code snippet below is used to play the game. I used an event.target.id function to locate the specific square the user has clicked on. The boats are hard coded into specific IDs, so when a user clicks on that specific square the class for the boat is added to the square (the boat is then shown as the background image). If the square clicked does not contain a boat, a class is added to the square with a snowflake background. Additionally, I call the checkWinner function within this function, so everytime the user clicks on the board it checks to see if they won.
 
 ```
 function playGameMobile(event) {
